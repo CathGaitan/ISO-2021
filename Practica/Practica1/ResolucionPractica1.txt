@@ -1,0 +1,754 @@
+1. Características de GNU/Linux:
+    a) Mencione y explique las características más relevantes de GNU/Linux
+        •Esta diseñado por miles de programadores
+        •Gratuito y de libre distribucion
+        •Es CODIGO ABIERTO. Permite estudiarlo,personalizarlo,etc
+        •Se distribuye con su codigo fuente
+        •Correcion rapido ante fallos
+        •Es multiusuario,multitarea,multiprocesador
+        •Altamente portable
+        •Permite el manejo de usuarios y permisos
+        •Todo es un archivo
+        •Cada directorio puede estar en una particion diferente
+    b) Mencione otros sistemas operativos y compárelos con GNU/Linux en cuanto a los puntos mencionados en el inciso a.
+        •Otros sistemas operativos son: Windows, macOS.
+        •Estan diseñados por una empresa
+        •Hay que pagar para poder utilizarlos
+        •Es de CODIGO CERRADO. es un tipo de software patentadoque no se distribuye al público. Este tipo de software está 
+         cifrado, por lo que únicamente los autores originales que crearon el código fuente tienen derechos exclusivos para 
+         copiarlo, modificarlo, actualizarlo y editarlo legalmente.
+        •No se distribuye su codigo fuente
+        •La correccion de fallos puede tardar mas, ya que esta a cargi de su propietario
+        •Es multiusuario,multitarea,multiprocesador
+        •Permite el manejo de usuarios y permisos (PREGUNTAR)
+
+    c) ¿Qué es GNU?
+        •GNU es un acronimo recursivo --> GNU no es Unix
+         Es un sistema operativo de software libre, de tipo UNIX.
+         Un sistema operativo Unix-like, es un sistema que se comporta de manera similar a un sistema Unix, aunque no es 
+         necesario que sea certificado en ninguna versión de la Single Unix Specification.
+        
+        •UNIX: es un sistema operativo inicialmente creado para administrar servidores, 
+         donde el medio de interacción principal es a través de comandos, es un software propietario 
+         creado por los laboratorios Bell de AT&T, por lo que es un sistema que no se puede editar. 
+         GNU está basado en el sistema UNIX, ya que de igual manera fue creado para ser utilizado principalmente 
+         desde línea de comandos, su principal diferencia radica en que este es completamente libre, por lo que
+         este respeta las 4 libertades de esa filosofía: es posible usar, estudiar, copiar y mejorar su código fuente. 
+         Otra diferencia es que actualmente el sistema GNU se utiliza para una gran variedad de plataformas y herramientas, 
+         que no necesariamente son exclusivas de la administración de servidores y UNIX se ha mantenido como el 
+         sistema operativo dedicado a los servidores.
+
+    d) Indique una breve historia sobre la evolución del proyecto GNU
+        • Iniciado por Richard Stallman en 1983 con el fin de crear un Unix libre (el sistema GNU)
+        • Para asegurar que el mismo fuera libre, se necesito crear un marco regulatorio conocido como GPL 
+         (General Public License de GNU)
+        • En 1985, Stallman crea la FSF (Free Software Foundation), con el fin de financiar el proyecto GNU.
+        • En 1990, GNU ya contaba con un editor de textos (Emacs), un compilador (GCC) y gran cantidad de bibliotecas 
+          que componen un Unix tipico. Pero faltaba el componente principal: el kernel.
+          -Trabajaron en el TRIX, pero en 1988 deciden abandonarlo debido a que requeria un hardware muy costoso
+          -Luego intentaron adoptar el kernel MACH pero crear GNU HURD pero no prospero.
+          -Linus Torvalds venia trabajando desde 1991 en un kernel llamado Linux, el cual se distribuiria bajo 
+           licencia GPL
+          -En el 1992 Torvalds y Stallman deciden fusionar ambos proyectos y alli nace GNU/Linux
+    
+    e) Explique qué es la multitarea, e indique si GNU/Linux hace uso de ella.
+        • Que sea multitarea permite al usuario estar realizando varias labores al mismo tiempo.
+        • GNU/LINUX si hace uso de esta propiedad
+
+    f) ¿Qué es POSIX?
+        • POSIX significa Portable Operating System Interface
+        • Es un conjunto de estándares especificadas por la IEEE con el objetivo de facilitar la interoperabilidad 
+          de sistemas operativos. Ademas POSIX establece las reglas para la portabilidad de programas.
+        • Ejemplo: cuando se desarrolla software que cumple con los estándares POSIX existe una gran probabilidad de que se 
+          podrá utilizar en sistemas operativos del tipo Unix. Si se ignoran tales reglas, es muy posible que el programa o 
+          librería funcione bien en un sistema dado pero que no lo haga en otro.
+
+2. Distribuciones de GNU/Linux:
+    a) ¿Qué es una distribución de GNU/Linux? Nombre al menos 4 distribuciones de GNU/-Linux y cite diferencias básicas entre ellas.
+        • Es una distribución de software basada en el núcleo Linux que incluye determinados paquetes de software para satisfacer 
+          las necesidades de un grupo específico de usuarios.Por lo general están compuestas, total o mayoritariamente, 
+          de software libre.
+        • Distribuciones de GNU/Linux: Debian, Ubuntu, LinuxMint, Distro Astro.
+          Debian:  Muy estable y 100% libre, Debian destaca por su sistema de paquetería .deb y su gestión de paquetes APT. 
+                   Es una de las distribuciones más importantes de GNU/Linux, ya que en ella se basan gigantes como Ubuntu.
+          Ubuntu: Una de las distribuciones más utilizadas gracias a su gran facilidad de uso. Basada en Debian. Exclusivo entorno 
+                  de escritorio Unity, con el que persigue convertirse en una distribución versátil que pueda utilizarse 
+                  tanto en ordenadores como móviles y tabletas.
+          LinuxMint: Basado en Ubuntu, es uno de los más recomendados para todos aquellos que tocan Linux por primera vez. 
+                     Su entorno de escritorio, Cinnamon, tiene muchas similitudes con el de Windows, y es también uno de 
+                     los más personalizables.
+          DistroAstro: Esta distribución está basada en Ubuntu 14.04 LTS y utiliza el entorno de escritorio MATE, 
+                       aunque lo más importante es su completa colección de aplicaciones dirigidas a los amantes de la astronomía.
+
+    b) ¿En qué se diferencia una distribución de otra?    
+        • Las distro de Linux tienen en común el kernel, pero el resto de componentes (las herramientas, la shell, el Display Server,
+          la GUI) varían entre sí, se personalizan o se crean desde cero, por eso las distribuciones son tan diferentes entre sí.
+          Aunque en la mayoría de los casos la principal diferencia es la GUI, o los programas y herramientas que vienen incluidos.
+
+    c) ¿Qué es Debian? Acceda al sitio e indique cuáles son los objetivos del proyecto y una breve cronología del mismo
+        • Debian es una distribucion de Linux, que que utiliza este kernel. Sin embargo, se está trabajando para ofrecer Debian 
+          con otros núcleos, en especial con el Hurd. El Hurd es una colección de servidores que se ejecutan sobre un micronúcleo
+          (como Mach) para implementar las distintas funcionalidades. El Hurd es software libre producido por el proyecto GNU.
+        • Ian Murdock fundó oficialmente el proyecto Debian el 16 de agosto de 1993.En ese momento, el concepto de una
+         «distribución» de Linux era algo nuevo. Ian pretendió que Debian fuera una distribución realizada de forma abierta, 
+         siguiendo el espíritu de Linux y GNU. La creación de Debian fue patrocinada por el proyecto GNU de la FSF durante un 
+         año (noviembre de 1994 a noviembre de 1995).
+
+3. Estructura de GNU/Linux:
+    a) Nombre cuales son los 3 componentes fundamentales de GNU/Linux.
+        • El núcleo (Kernel) es un programa medular que ejecuta programas, gestiona dispositivos de hardware y forma en conjunto 
+          con el Shell y el sistema de archivos la estructura básica del sistema operativo.
+        • El Shell proporciona una interfaz entre el núcleo y el usuario, la cual permite interpretar ordenes del usuario y 
+          enviarlas al núcleo.
+        • El sistema de archivos organiza el almacenamiento de archivos que están organizados en directorios.
+    b) Mencione y explique la estructura básica del Sistema Operativo GNU/Linux
+        • Kernel: que es el componente principal, se hace referencia a veces como el sistema operativo. La función es ejecutar
+          programas y gestionar los dispositivos de hardware. Es el encargado que el software y hardware trabajan juntos. 
+          Sus funciones mas importantes son la adminsitracion de memoria, CPU y E/S.   
+        • Shell que permite la comunicación usuario-SO.
+        • Filesystem que organiza el modo en que se almacenan y acceden los archivos
+        • Serie de utilidades que ya se consideran parte estándar del sistema, ya que son características de determinadas distros. 
+
+4. Kernel:
+    a) ¿Qué es? Indique una breve reseña histórica acerca de la evolución del Kernel de GNU/Linux.
+    b) ¿Cuáles son sus funciones principales?
+        • Respondidas anteriormente
+    c) ¿Cuál es la versión actual? ¿Cómo se definía el esquema de versionado del Kernel en versiones anteriores a la 2.4? 
+       ¿Qué cambió en el versionado se impuso a partir de la versión 2.6?
+        • La ultima version que salio es la 5.13.13 (26/08/2021)
+        •La version 2.4 fue la que catapulto a GNU/Linux como un SO estable y robusto. Durante este periodo es que se comienza a utilizar
+         Linux mas asiduamente
+        • Antes de la serie de Linux 2.6.x, los números pares indicaban la versión “estable” lanzada. Los números impares, 
+          como la serie 2.5.x, son versiones de desarrollo, es decir que no son consideradas de producción.
+    d) ¿Es posible tener más de un Kernel de GNU/Linux instalado en la misma máquina?
+        • Es posible tener dos kernels en una misma pc. Pero al arrancar la computadora, solamente se va a ejecutar uno solo.
+          Los distintos kernels deben estar en distintas particiones de un disco duro. Recien cuando se elije uno de los SO, se
+          lleva el kernel correspondiente a memoria.
+    e) ¿Dónde se encuentra ubicado dentro del File System?
+        • Se encuentra en /boot
+    f) ¿El Kernel de GNU/Linux es monolítico? Justifique.
+        • Es un kernel monolitico hibrido. 
+            -MONOLITICO: Porque los drives corren en el mismo espacio que el kernel.
+            -HIBRIDO: Porque tiene la capacidad de cargar y descargar funcionalidad a traves de modulos (los drives pueden
+                      cargar y descargarse dinamicamente).
+
+5. Intérprete de comandos (Shell)):
+  a,b) ¿Qué es? ¿Cuáles son sus funciones?
+    • Es el programa informático que provee una interfaz de usuario para acceder a los servicios del sistema operativo.
+    • En Windows se le llama PowerShell, en Linux se llama Bash (el mas utilizado)
+    • Ventajas de utilizar la shell: 1) Sustitución de comodines en nombres de archivos (coincidencia de patrones).
+                                     2) Define tareas prolongadas que se ejecutarán en segundo plano, liberando el 
+                                        terminal para el proceso interactivo concurrente.
+                                     3) Proporciona un alias a un mandato o frase. Cuando el shell encuentra un seudónimo 
+                                        en la línea de mandatos o en un script de shell, sustituye el texto al que se refiere 
+                                        el seudónimo.
+                                     4) Registra los mandatos que especifica en un archivo histórico. Puede utilizar este archivo
+                                        para acceder, modificar y volver a emitir fácilmente cualquier mandato listado.
+                                     5) Genera automáticamente una lista de nombres de archivo en una línea de mandatos utilizando 
+                                        caracteres coincidentes con un patrón.
+                                     6) Enlaza cualquier número de mandatos para componer un programa complejo. La salida estándar 
+                                        de un programa pasa a ser la entrada estándar del siguiente.
+                                     7) Almacena datos de variables definidas por el usuario y variables de shell predefinidas.
+                                      
+  c) Mencione al menos 3 intérpretes de comandos que posee GNU/Linux y compárelos entre ellos.
+    • Bash: Es el mas conocido, ya que suele venir por defecto en la mayoria de las distribuciones de GNU/Linux.
+            Es compatible con el shell sh. Además, incorpora algunas características útiles de ksh y csh, y otras
+            propias como la edición de línea de comandos, tamaño ilimitado del historial de comandos, control de los 
+            trabajos y procesos, funciones y alias, cálculos aritméticos con números enteros, etc. Su símbolo del sistema 
+            es nombre_usuario@nombre_equipo.
+    • BourneShell(sh): Su símbolo del sistema es $. Es el shell estándar.
+    • KornShell(ksh): Amplía el shell del sistema añadiendo historial de órdenes, edición en línea de órdenes y 
+                      características ampliadas de programación.
+    • CShell(csh): Procedente del sistema BSD, proporciona funciones tales como control de trabajos, historial de órdenes,
+                   etc. Ofrece importantes características para los programadores que trabajan en lenguaje C. 
+                   Su símbolo del sistema es %.
+      -CShell no recomendaba para programar scripts, si se desea que sean portables. Buena como shell interactiva
+      -CShell tiene una sintazis muy distinta a shells tipo Bourne.
+      -KornShell soporta arreglos asociativos
+      -KornShell permite acceder a el valor de una variable usada en un loop fuera del mismo
+      -Bash maneja los codigos de salido a traves de pipas, de una manera mas clara.
+      -KornShell soporta el comando "print", que es mas completo que el "echo".
+      -Bash soporta completar nombres de archivos y comandos usando la tecla tab.
+
+  d) ¿Dónde se ubican (path) los comandos propios y externos al Shell?
+    • PATH: Contiene la lista de directorios separados por ':' en los que la shell busca los programas.
+    • Comandos internos: Son las nativos de la Shell. Por lo tanto, no se corresponde en ningún caso 
+                         a un archivo almacenado en disco. Ej: cd,pwd,echo,exec,time,exit.
+    • Comandos externos: La Shell no los sabe ejecutar y para ello requiere su localización en el disco duro. Debe cumplir 
+                         con ser archivos de formato binario ejecutable o ser archivos con formato de texto que representa 
+                         un script de comandos. Los comandos externos se ejecutan por un shell hijo que actúa de intermediario.
+                         Ej: ls,miscript,cp,mv,rm.
+                         La mayoria de los externos estan en /usr/bin
+                         Cada directorio separado por ” : ” es un “lugar” donde bash va a buscar dichos comandos externos.
+                         Si existe esta coincidencia, pero por la razón que sea necesitamos ejecutar el comando externo y no el 
+                         interno debemos hacerlo indicando su path completo.
+
+  e) ¿Por qué considera que el Shell no es parte del Kernel de GNU/Linux?
+    • Debido a que el kernel es un componente que intenta ser lo mas minimalista posible. Con interfaces minimas pero muy complejas.
+    • Si algo del Kernel falla, las estabilidad del sistema, generalmente se pierde. Pero si se mantiene por separado, solamente la
+      shell deberia ser reiniciado.
+    • La shell como tal es algo subjetivo. No hay un único shell, sino varias implementaciones, y cada usuario escoge el que más 
+      le guste.
+  
+  f) ¿Es posible definir un intérprete de comandos distinto para cada usuario? ¿Desde dónde se define? ¿Cualquier usuario 
+     puede realizar dicha tarea?
+     • Si, es posible que cada usuario tenga una shell diferente.
+     • Desde la terminal nosotros podemos ejecutar una serie de comandos que sirven para determinar que shell vamos a utilizar.
+     • Cada usuario puede cambiar su propia shell, debido a que pide la contrasenia de este, antes de permitir el cambio.
+
+6. Sistema de Archivos (File System):
+  a) ¿Qué es?
+    • Es el sistema de almacenamiento de un dispositivo de memoria, que estructura y organiza la escritura, búsqueda, lectura, 
+      almacenamiento, edición y eliminación de archivos de una manera concreta. El objetivo principal de esta organización es 
+      que el usuario pueda identificar los archivos sin lugar a error y acceder a ellos lo más rápido posible. Los sistemas de 
+      archivos también otorga las siguientes características:
+                                                              -Convenciones para nombrar a los archivos
+                                                              -Atributos de archivo
+                                                              -Control(es) de acceso
+    • Son un componente operativo importante, ya que actúan como una interfaz entre el sistema operativo y todos los dispositivos 
+      conectados al equipo (internos y externos, como las memorias USB).
+  b) Mencione sistemas de archivos soportados por GNU/Linux.
+    • Los soportados por GNU/Linux son: minix, ext, ext2, ext3, ext4, xia, msdos, umsdos, vfat, proc, nfs, iso9660, hpfs, 
+                                        sysv, smb, ncpfs, FAT, FAT32, NTFS.
+
+  c) ¿Es posible visualizar particiones del tipo FAT y NTFS en GNU/Linux?
+    • NTFS es ideal para ser usado en discos duros externos, gracias a que soporta particiones y el almacenamiento de ficheros 
+      de gran tamaño, sin embargo puede plantear problemas cuando hay por medio un Mac e incluso alguna que otra distribución Linux,
+      aunque todas las más populares pueden leer y escribir sobre NTFS sin problemas.
+    • Es frecuente que junto a la distribución Linux que hayamos instalado tengamos también una o más particiones en formato NTFS 
+      o FAT. Es decir, particiones en las que suele estar instalado alguna versión del sistema operativo windows. Sin embargo Linux 
+      no permite ver por defecto el contenido de las particiones de windows. Para poder hacerlo será necesario que montemos la 
+      partición NTFS o FAT en la que está windows. Algo que se consigue fácilmente ya que sólo es necesario y a mirar la partición
+      de windows para que linux la monte automáticamente.
+
+  d) ¿Cuál es la estructura básica de los File System en GNU/Linux? Mencione los directorios más importantes e indique qué tipo 
+     de información se encuentra en ellos. ¿A qué hace referencia la sigla FHS?
+    • Estructura basica: / --> tope de la estructura de directorios
+                         /home --> se almacenan archivos de usuarios
+                         /var --> informacion que caria de tamaño (archivos de registros,bases de datos)
+                         /etc --> archivos de configuracion,scripts de arranque,etc
+                         /bin --> archivos binarios y ejecutables
+                         /dev --> Enlace a dispositivos
+                         /usr --> Aplicaciones de usuarios
+                         /root --> directorio personal del usuario root (superusuario)
+                         /boot --> Ficheros de configuración del arranque, núcleos y otros ficheros 
+                                   necesarios para el arranque (boot) del equipo.
+    • FHS (FyleSystem Herarchy Standard): estandard que siguen todos los SO Unix para organizar el fyleSystem.                         
+
+7. Particiones:
+  a) Definición. Tipos de particiones. Ventajas y Desventajas.
+    • Definicion: Una partición es el nombre que se le da a cada división presente en una sola unidad física de almacenamiento 
+                  de datos. Tener varias particiones es como tener varios discos duros en un solo disco duro físico, cada uno 
+                  con su sistema de archivos y funcionando de manera diferente.
+                  Utilidades: hacer copias de seguridad, tener diferentes SO en un mismo disco, etc.
+    • Tipos: -Particion primaria: Dependen de la tabla de particiones, y son las que detecta el ordenador al arrancar, debido a
+                                  esto, alli se instalan los SO. Es una division cruda del disco. Practicamente cualquier SO las
+                                  detectara y asignara una unidad. Maximo 4 particiones primarias.
+             -Particion extendida: Fue ideada para tener mas de cuatro particiones en un disco duro, pero aqui no se pueden instalar
+                                   un SO. Solamente util para almacenar datos. Solo puede haber una particion extendida, aunque
+                                   dentro podemos hacer tantas otras particiones como queramos. Si la utilizamos solamente podremos
+                                   tener 3 primarias y una extendida.
+             -Particion logica: Son las particiones que se hacen dentro de una particion extendida. Solamente se les debe asignar
+                                un tamaño y un tipo de FileSystem. Funcionan como si fueran dispositivos independentes.
+                            
+  b) ¿Cómo se identifican las particiones en GNU/Linux? (Considere discos IDE, SCSI y SATA).
+    • IDE: Empieza con /dev/ y luego sigue la sig identificacion dependiendo la particion
+           -hda (primer disco duro IDE).
+              hda1 (primera partición del primer disco duro IDE).
+              hda2 (segunda partición del primer disco duro IDE).
+              hda5 (primera partición lógica de una partición extendida del primer disco duro IDE)
+           -hdb (segundo disco duro IDE).
+              hdb1 (primera partición del segundo disco duro IDE).
+              hdb2 (segunda partición del segundo disco duro IDE).
+              hdb5 (primera partición lógica de una partición extendida del segundo disco duro IDE)
+    • SCSI/SATA: Empieza con /dev/ y luego sigue la sig identificacion dependiendo la particion
+                 -sda (primer disco duro SCSI)
+                    sda1 (primera partición del primer disco SCSI).
+                    sda2 (segunda partición del primer disco SCSI).
+                    sda5 (primera partición lógica del primer disco duro SCSI)
+                 -sdb (segundo disco duro SCSI)
+
+  c) ¿Cuántas particiones son necesarias como mínimo para instalar GNU/Linux? Nómbrelas indicando tipo de partición, identificación, 
+     tipo de File System y punto de montaje.
+    • Linux necesito minimo una particion para funcionar. Esta es: El area del sistema de archivos
+      -Area del sistema de archivos --> Tipo de particion: primaria - identificación: sda - FileSystem: ext4 - Punto de Montaje: /
+    • Se aconseja utilizar dos: una para el / y otra para el swap
+
+  e) ¿Qué tipo de software para particionar existe? Menciónelos y compare.
+    • Gparted: para el entorno de escritorio GNOME. Esta aplicación es usada para crear, eliminar, redimensionar, inspeccionar y 
+               copiar particiones, como también los sistemas de archivos que se encuentran en ellas. Esto es útil para crear 
+               espacio para nuevos sistemas operativos, reorganizar el uso del disco y crear imágenes de un disco en una partición.
+    • KDE Partition Manager: hace uso de la biblioteca GNU Parted, para permitir al usuario realizar la administración de 
+                             particiones, de las cuales las tareas que permite realizar encontramos las siguientes:
+                             Crear, borrar, comprobar, redimensionar y copiar particiones y los sistemas de archivos en ellas.
+    • Fdisk: Fdisk esta incluido en la mayoría de las distribuciones de Linux y suele ser la herramienta de este tipo mas utilizada 
+             por los usuarios. Permite al usuario realizar lo que cualquier administrador de particiones puede hacer, lo que hace 
+             especial a Fdisk es que no es una herramienta exclusiva de Linux, sino que es multiplataforma. Nos permite crear 
+             particiones en 94 sistemas de archivos distintos, incluyendo FAT32, Ext2, Ext3, Ext4, Solaris y QNX. 
+             Fdisk no cuenta con una interfaz gráfica, por lo que su uso se basa en la línea de comandos.
+    • Cfdisk: su uso es mediante la línea de comandos, pero con una interfaz diferente a fdisk, cfdisk intenta leer las tablas
+              de particiones del disco, mostrando las encontradas.
+
+8. Arranque (bootstrap) de un Sistema Operativo:
+  a) ¿Qué es el BIOS? ¿Qué tarea realiza?
+    • Es la abreviatura de Binary Input Output System, es un chip o circuito integrado que en su interior almacena una serie 
+      de rutinas de software que ponen en funcionamiento el resto del hardware de la placa base. Es el primer programa que se 
+      ejecuta al encender la PC.
+    • Su proposito es  inicializar y configurar, además de testear si encuentre en buen estado de funcionamiento, todo el hardware
+      del sistema, incluyendo la memoria RAM, discos duros y demás placas del sistema, para una vez finalizado este paso, cargar 
+      el gestor de arranque para que comience a ejecutarse el sistema operativo predeterminado de la computadora.
+      Si la BIOS detecta cualquier problema de funcionamiento en alguno de los elementos mencionados, no permitirá que se llegue a 
+      la instancia de arranque del sistema operativo hasta que el problema sea solucionado.
+    • La información necesaria para realizar su tarea se almacena en otro chip del tipo CMOS ubicado en la misma placa base, 
+      llamado CMOS, en este caso, para que los datos que contiene el chip no se pierdan, se utiliza una batería para alimentarlo.
+
+  b) ¿Qué es UEFI? ¿Cuál es su función?
+    • Es la abreviatura de Unified Extensible Firmware Interface.
+    • Esta interfaz especial se encarga de arrancar la placa base y los componentes de hardware relacionados con ella. 
+      De este modo, la interfaz es la responsable de que se cargue un gestor de arranque (bootloader) concreto en la memoria 
+      principal, que será el que iniciará las acciones rutinarias de arranque.
+    • Para poder usar la interfaz UEFI, el ordenador necesita disponer de un firmware especial en la placa base. Al encender 
+      el ordenador, el firmware utiliza la interfaz UEFI como una capa o layer operativa que actúa de intermediaria entre el mismo 
+      firmware y el sistema operativo. Para que el modo UEFI se pueda iniciar antes de que el ordenador en sí haya arrancado 
+      realmente, se implementa de forma permanente en la placa base, en un chip de memoria. Así, como parte integral del firmware 
+      de la placa base, la programación UEFI se mantiene incluso cuando aún no circula la electricidad.
+  
+    Diferencias entre BIOS y UEFI: -El BIOS tiene un diseño rustico, y sólo te puedes mover por él mediante el teclado. 
+                                   -La UEFI tiene una interfaz muchísimo más moderna, con animacion e interaccion con el mouse.
+                                   -El UEFI puede conectarse a Internet para actualizarse.
+                                   -El código de UEFI se ejecuta en 32 o 64 bits, mientras que la BIOS suele hacerlo en 16 bits.
+                                   -El arranque del ordenador es más rápido con UEFI de lo que lo era con BIOS.
+                                   -UEFI también intenta mejorar la seguridad con su funcionalidad Secure Boot. Evita el inicio de 
+                                    sistemas operativos que no estén autenticados
+                                   -El UEFI se puede cargar en cualquier recurso de memoria no volátil, lo que permite que sea 
+                                    independiente de cualquier sistema operativo. También se le pueden añadir extensiones de
+                                    terceros, como herramientas de overclocking o software de diagnóstico.
+
+  c) ¿Qué es el MBR? ¿Que es el MBC?
+    • MBR: Sus siglas singnifican Master Boot Record 
+           Es un sector reservado del disco fisico (cilindro0,cabezal0,sector1). Todos los discos lo tienen.
+           Se encarga de iniciar el programa de arranque para el sector de arranque de esa partición. En este sector de arranque 
+           se identifica donde se encuentra el sistema operativo, y habilita la información de inicio que se cargará en la RAM 
+           del equipo.
+           Tiene un tamaño de 512 bytes --> Primeros 446 bytes: Master Boot Code (MBC)
+                                        --> A partir del byte 446 esta la tabla de particiones. Tiene un tamaño de 64 bytes. 
+                                            Esta se encarga de marcar el sector de comienzo y de fin de cada particion
+                                        --> Ultimos bytes: 2bytes libres o para firmar el MBR
+    • MBC: Sus siglas significan Master Boot Code. Es una de las varias partes del MBR. Realiza el primer conjunto de funciones 
+           importantes en el proceso de arranque.
+           Logra arrancar el SO haciendo lo siguiente: -Examina la tabla de particiones
+                                                       -En el Primary Master Disk va a haber una particion marcada como booteable 
+                                                       (esto significa que es una particion que sirve para el arranque de la pc)
+                                                       -Ejecuta lo que esta en el primer sector de la particion booteable
+                                                       -Transfiere el control al código ejecutable en el sector de arranque.
+
+  d) ¿A qué hacen referencia las siglas GPT? ¿Qué sustituye? Indique cuál es su formato
+    • GPT no es más que otro estilo distinto de tabla de particiones, la cual fue implementada para los modernos sistemas UEFI.
+      Entonces, mientras que BIOS utiliza MBR para gestionar el disco duro y el arranque del sistema, GPT está orientado a ser 0el 
+      sistema propio para UEFI.
+    • El nombre proviene de que el sistema le asocia un identificador global único a cada partición (Global Unique Identifier). 
+      La extensión del nombre de GTP es tan larga que podríamos poner nombre a todas las particiones que hay en el mundo con un 
+      identificador único distinto, por lo que las limitaciones no existen para este estilo de partición más allá que las del propio
+      disco duro y sistema operativo. Por ejemplo, Windows tiene un límite de 128 particiones primarias GPT.
+    • Su estructura: -LBA0: En el principio existe un trozo de código MBR para proporcionar compatibilidad con sistemas BIOS antiguos.
+                     -LBA1: Se almacena información sobre los bloques de disco que los usuarios pueden usar, además del número y 
+                            tamaño de particiones que existan. En esta cabecera es donde se sitúa el GUID del disco, así como su 
+                            tamaño y dónde está localizada la tabla de particiones secundaria (el backup). Finalmente contiene una 
+                            suma de comprobación CRC32 para que EFI verifique que todo está correcto y proceder al arranque.
+                     -LBA2 al LBA33: Se almacena las entradas de partición correspondientes. En cada una de estas entradas se 
+                                     almacena, el tipo de partición (16 bytes), el GUID único de la partición (16 bytes) y otra 
+                                     información hasta un total de 128 bytes. Es por esto que cada bloque lógico puede almacenar 
+                                     información de 4 particiones (128×4=512).
+
+  (e) ¿Cuál es la funcionalidad de un “Gestor de Arranque”? ¿Qué tipos existen? ¿Dónde se instalan? Cite gestores de arranque.
+    • Un bootloader (gestor de arranque) es un software especial que carga en la memoria interna el sistema operativo instalado 
+      en el sistema. Para conseguirlo, el bootloader suele ejecutarse directamente al arrancar un dispositivo usando algún medio 
+      que sea booteable. El medio de arranque recibe la información acerca de dónde se encuentra el bootloader por parte del 
+      firmware del ordenador (BIOS-UEFI). Todo el proceso es lo que se denomina inicio, arranque o, en inglés booten.
+    • Puede alocarse en un medio extraible, va a ser donde primero intente encontrarlo (CD/DVD,USB, discos duros externos).
+      Tambien pueden estar en los discos duros internos, que busca alli, si no encontro ningun bootleader en un medio extraible. 
+      Suele encontrarse en el MBR (Master Boot Record) del disco duro o SSD, donde también se almacena la tabla de particiones 
+      del medio de almacenamiento, no obstante no siempre es así y por norma general podemos encontrarnos estas dos opciones:
+        -En el primer bloque del medio de arranque (también conocida como «pista cero del disco»).
+        -En una partición específica del medio de arranque.  
+    • Gestores de arranque para Linux: GNU GRUB,LILO,BURG,Syslinux.
+
+  f) ¿Cuáles son los pasos que se suceden desde que se prende una computadora hasta que el SO es cargado (proceso de bootstrap)?
+    1) Cuando una computadora se enciende por primera vez, lanza un programa llamado cargador bootstrap que reside la BIOS o firmware. 
+       Las funciones principales del bootstrap son probar el hardware de la computadora y localizar y cargar el sistema operativo en
+       la RAM. Puesto que el programa bootstrap está incorporado al chip BIOS, también se denomina control del BIOS. 
+       Durante la ejecución de las rutinas de firmware del BIOS, se llevan a cabo tres conjuntos de operaciones:
+              -Se ejecutan las Auto-Pruebas de Encendido (POSTs).
+              -Se completa la inicialización.
+              -El BIOS desplaza la dirección de inicio y la información de modo al controlador DMA, y luego carga
+               el Registro de Inicio Maestro (MBR). 
+    2) El bootstrap necesita localizar y copiar el SO a la RAM de la computadora. El orden en el cual el programa bootstrap busca el
+       archivo de inicio del SO puede cambiarse en la configuración del BIOS del sistema. El orden más común para la búsqueda del OS 
+       es primero el diskette, luego la unidad de disco duro, y finalmente el CD-ROM. Cuando el bootstrap encuentra el registro de 
+       inicio del SO, el registro se copia a la RAM de la computadora. Luego el programa bootstrap pasa el control del proceso de 
+       inicio al registro de inicio. El registro de inicio busca archivos en el disco duro que ayuden al disco duro a encontrar y 
+       localizar el resto del SO. A medida que los archivos se localizan y se cargan en la RAM, el registro de inicio ya no es 
+       necesario. El SO que estaba almacenado en el disco duro se encuentra ahora controlando el proceso de inicio.
+    3) El último paso del proceso de inicio es que el SO encuentre los archivos de configuración del hardware que son específicos de 
+       la computadora. Si la computadora posee un módem o una tarjeta de sonido, el SO encuentra sus archivos de configuración y los 
+       carga. (drivers)
+
+  g) Analice el proceso de arranque en GNU/Linux y describa sus principales pasos
+    1) BIOS: Su misión es buscar el cargador de arranque y ejecutarlo. Cuando localiza el cargador de arranque, lo traspasa a la 
+             memoria y le da el control. Entonces se inicia y ejecuta el cargador de arranque MBR.
+    2) MBR: lo encontramos en el primer sector de la unidad de arranque. Normalmente en /dev/sda o /dev/had.
+            El MBR guarda toda la información sobre cualquier cargador de arranque instalado en el sistema. Nosotros utilizamos GRUB.
+            Por tanto el MBR debe cargar y ejecutar el gestor GRUB.
+    3) GRUB: Se almacena toda la información sobre la imagen del sistema operativo que se debe cargar y ejecutar. En el caso que 
+             tengamos más de un sistema operativo instalado, las entradas estarán en este archivo y nos ofrecerá la posibilidad de 
+             ejecutar el que más nos convenga. GRUB nos muestra su pantalla de inicio en el arranque del sistema, espera nuestra 
+             selección, en caso de no marcar nada… pasados unos segundos se inicia el sistema predeterminado que tengamos definido
+             en el archivo grub.cfg.
+    4) KERNEL: Al iniciar el kernel, se monta el sistema de archivos raíz y se ejecuta /sbin/init. Como init es lo primero que 
+               ejecuta el kernel Linux, siempre le corresponde el numero «1» como ID de proceso (PID), lo puedes verificar con 
+               el siguiente comando: "ps -ef|grep init"
+    5) INIT: Comprueba el archivo e indica el nivel de ejecución (puede variar dependiendo de las circunstancias y la carga del 
+             sistema). Debes tener muy claro que en Linux existen siete niveles de ejecución.
+                    0 – Parar.
+                    1 – Usuario exclusivo.
+                    2 – Modo multiusuario sin acceso a NFS (sistema de archivos de red).
+                    3 – Modo multiusuario sin restricción.
+                    4 – Reservado (no se utiliza salvo excepciones).
+                    5 – X11 (sistema de ventanas X).
+                    6 – Reiniciar.
+            Init verifica e identifica el nivel de inicio predeterminado del archivo (puede variar, pero es común el «/etc/inittab«),
+            y carga las herramientas y aplicaciones necesarias dependiendo de su nivel de ejecución.
+    6) RUNLEVEL: Dependiendo de su nivel de ejecución, el sistema iniciara las aplicaciones desde los siguientes directorios:
+                    -Run level 0 – /etc/rc.d/rc0.d/
+                    -Run level 1 – /etc/rc.d/rc1.d/
+                    -Run level 2 – /etc/rc.d/rc2.d/
+                    -Run level 3 – /etc/rc.d/rc3.d/
+                    -Run level 4 – /etc/rc.d/rc4.d/
+                    -Run level 5 – /etc/rc.d/rc5.d/
+                    -Run level 6 – /etc/rc.d/rc6.d/
+  
+  h) ¿Cuáles son los pasos que se suceden en el proceso de parada (shutdown) de GNU/Linux?
+     • Los sistemas operativos de Linux se pueden apagar, suspender o reiniciar usando el comando shutdown y sus diversas opciones
+     • PASOS: -Se desmontan todos los sistemas de archivos (excepto el sistema de archivos raíz /)
+              -Se finalizan (kill) los procesos de los usuarios (si existen aún usuarios dentro del sistema)
+              -Finalmente se desmonta el sistema de archivos raíz.
+              -Cuando todo este proceso finaliza, INIT muestra un mensaje indicando que se puede apagar la máquina. Es entonces y 
+               sólo entonces que es posible bajar el switch (o interruptor de suministro eléctrico).
+
+  i) ¿Es posible tener en una PC GNU/Linux y otro Sistema Operativo instalado? Justifique.
+    • Si, es posible tener dos SO en una misma PC. Ya que se puede tener una particion en el disco y poner cada SO en una particion
+      diferente. Cada particion es tomada como un disco diferente, esto permite que cada una tenga su MBR, su bootloader, el kernel
+      especifico de cada SO, etc.
+
+9. Archivos:
+  a) ¿Cómo se identifican los archivos en GNU/Linux?
+    • Los archivos se identifican por su nombre, en Linux no hay ningún formato estándar para los nombres de los archivos, 
+      en general, pueden tener cualquier carácter menos "/" y están limitados a 256 caracteres de longitud.
+  b) Investigue el funcionamiento de los editores vi y mcedit, y los comandos cat y more.
+    • Editor vi: El editor vi es un editor de texto que maneja en memoria, el texto entero de un archivo. Es el editor clásico de 
+                 UNIX (se encuentra en todas las versiones). Puede usarse en cualquier tipo de terminal con un mínimo de teclas.
+                 Existen tres modos o estados de vi:
+                          -Modo comando: este es el modo en el que se encuentra el editor cada vez que se inicia.
+                          Las teclas ejecutan acciones (comandos) que permiten mover el cursor, ejecutar comandos
+                          de edición de texto, salir de vi, guardar cambios, etc.
+                          -Modo inserción o texto: este es el modo que se usa para insertar el texto. Existen varios
+                          comandos que se pueden utilizar para ingresar a este modo.
+                          -Modo línea o ex: se escriben comandos en la última línea al final de la pantalla
+    • Editor mcedit: es es un administrador de archivos o gestor de ficheros, bastante ortodoxo, para GNU/Linux y también existe 
+                     para Windows, que se encuentra licenciado bajo GPL de GNU y por lo tanto califica como Software Libre. 
+                     Es una aplicación para nuestra terminal o tty rica en funciones que nos permite hacer lo siguiente:
+                          – Copiar
+                          – Mover
+                          – Eliminar archivos y directorios
+                          – Buscar archivos
+                          – Ejecutar comandos en la subshell
+                          – Posee un visor interno y editor incluido
+
+    • Comando cat:  Deriva su nombre de la palabra concatenar y te permite crear, fusionar o imprimir archivos en la pantalla 
+                    de salida estándar o en otro archivo y mucho más.
+                    COMANDOS:
+                    cat > filename.txt --> Así se crea el archivo y puedes comenzar a rellenarlo con texto. 
+                                           Para agregar varias líneas de texto, simplemente presiona Enter al final de cada línea. 
+                                           Cuando hayas terminado, presiona CTRL + D para salir del archivo.
+                    cat filename.txt --> El comando leerá el contenido de un archivo y lo mostrará en la consola.
+                    cat filename.txt | more --> Para evitar desplazarse por archivos muy grandes.
+                    cat *.txt --> Para mostrar el contenido de más de un archivo.
+                    cat source.txt > destination.txt --> Para redirigir la salida a otro archivo usando la opción >
+                                                         Si el archivo de destino no existe, el comando lo creará o sobrescribirá 
+                                                         uno existente con el mismo nombre.
+                    cat source.txt >> destination.txt --> Para agregar el contenido del archivo destino, usa la opción >>
+                    cat source1.txt source2.txt > destination.txt --> Concatenar multiples archivos en uno solo.
+                    cat -s filename.txt --> Para suprimir líneas vacías repetidas y ahorrar espacio en tu pantalla.
+                                            Esta opción mantendrá una línea vacía al eliminar solo las líneas vacías repetidas
+                    tac filename.txt --> Para ver el contenido de un archivo en orden inverso
+                    cat -v filename.txt --> Para mostrar todos los caracteres no imprimibles
+    
+  • Comando more: permite mostrar el resultado de la ejecución de un comando en la terminal de a una página a la vez. Esto es útil
+                  cuando se ejecuta un comando que causa un gran desplazamiento, como el comando ls o el comando du.
+                  EJEMPLO:
+                  ps -ef | more --> La pantalla se llenará con una lista de datos, pero se detendrá al final de la página con el 
+                                    siguiente mensaje: --more--. Para ir página siguiente, tienes que presionar la barra espaciadora
+                                    Se utiliza la q para salir.
+                  more <nombre del archivo> --> Si deseas leer un archivo de texto de a una página a la vez
+                  more -p <nombre del archivo> --> Si deseas que la pantalla se borre y la página siguiente se muestre sin 
+                                                   desplazarse
+                  more -c <nombre del archivo> --> pintará cada pantalla desde la parte superior, borrando el resto de cada línea 
+                                                   a medida que se muestra.
+  c) Cree un archivo llamado “prueba.exe” en su directorio personal usando el vi. El mismo debe contener su número de alumno y su nombre.
+    • Succes!
+  
+  d) Investigue el funcionamiento del comando file. Pruébelo con diferentes archivos. ¿Qué diferencia nota?
+    • El comando file te dice si el objeto que ves es un directorio o un archivo.
+    • La sintaxis es: file [opciones] nombre_de_archivo/directorio
+          opciones:
+            -c	Comprobar el archivo mágico para errores de formato. Por razones de eficiencia, esta validación normalmente no se lleva a cabo.
+            -h	No sigue enlaces simbólicos.
+            -m	Utiliza mfile como archivo mágico alternativo.
+            -f	ffile contiene una lista de los archivos a examinar.
+    • Tanto como prueba.exe, como miku me tiran de tipo: ASCII text
+
+10. Indique qué comando es necesario utilizar para realizar cada una de las siguientes acciones. Investigue su funcionamiento y parámetros
+    más importantes:
+    a) Cree la carpeta redictadoISO(mkdir) --> mkdir /ruta/nuevodirectorio. Ej: mkdir /home/cath/Escritorio/carpetaPrueba
+    b) Acceda a la carpeta (cd) --> cd directorio. Ej: cd Escritorio
+    c) Cree dos archivos con los nombres redictadoiso-1 y redictadoiso-2 (touch) 
+                  -touch nombre_archivo.txt. Un solo archivo              
+                  -touch nombre_archivo1.txt nombre_archivo2.txt nombre_archivo3.txt. Multiples archivos
+                  -touch nombre_archivo{1..3}.txt. Generar automáticamente los nombres de los archivos
+    d) Liste el contenido del directorio actual (ls) --> ls {opciones} {directorio}
+                  opciones:
+                    - ls -a: Permite listar todos los ficheros incluyendo los ficheros ocultos, los cuales comienzan su nombre con un .
+                    - ls -l: Permite listar los ficheros en formato de una sola columna
+                    - ls -t: Permite listar los ficheros por orden de la marca de tiempo (fecha de modificación por defecto)
+                    - ls -h: Añade una letra indicando el tamaño para facilitarnos la lectura.
+    e) Visualizar la ruta donde estoy situado (pwd) --> sintaxis basica: pwd [OPCION]...
+    f) Busque todos los archivos en los que su nombre contiene la cadena “iso*” (find) --> find <startingdirectory> <options> <search term>
+              <startingdirectory>: es el punto de origen donde deseas iniciar la busqueda. Puede tambien ser reemplazado con:
+                                  / (slash): busca en todo el sistema.
+                                  .(punto): busca en la carpeta en la que estás trabajando actualmente (directorio actual).
+                                  ~ (tilde): para buscar desde tu directorio home
+              <options>: se usa para tu archivo. Este podría ser el nombre, tipo, fecha de creación del archivo, etc.
+              <searchterm>:es donde se especificará el término de búsqueda relevante.
+              Ej: find . -name nombreArchivo --> para buscar el archivo por nombre
+                  find . -name "*iso*" --> todos los archivos que contengan iso en el nombre. iso,holaiso,isohola,etc
+    h) Verifique los usuarios conectado al sistema (who) --> Sintaxis: who
+    i) Acceder a el archivo redictadoiso-1 e ingresar Nombre y Apellido --> utilizo el vim
+                -vi redictadoiso.txt: para entrar al vim
+                -i: para acceder al modo edicion
+                -Esc: para salir del modo edicion
+                -:wq: hace el guardado del archivo y después sale de Vim.
+    j) Mostrar en pantalla las últimas líneas de un archivo (tail) --> tail nombre_de_archivo
+          Por defecto, Tail imprime las últimas 10 líneas de un archivo
+          Tail –n* nombre_de_archivo: El * indica el número de líneas que quieres imprimir.
+
+11. Investigue su funcionamiento y parámetros más importantes:
+  a) shutdown
+    • Permite apagar, reiniciar y detener tu sistema.
+    • Sintaxis: shutdown [OPTIONS] [TIME] [WALL]
+          [OPTIONS]: puede ser una cadena caracteres 
+          [TIME]: seguido de los detalles de tiempo
+          [WALL]: mensaje para notificar a los usuarios registrados que se apagará el sistema.
+
+  b) reboot
+    • Diseñado para el reinicio del equipo
+    • Sintaxis: reboot  [-d | -f | -i | -n | -w]
+        [-n] No sincronizar antes de reiniciar. Tenga en cuenta que los controladores del núcleo y de almacenamiento pueden todavía sincronizar.
+        [-w] en realidad no reinicia, pero sólo escriben el registro wtmp (en el directorio / var / log / wtmp) .
+        [-d] No escribe el registro wtmp. El indicador-n implica - d.
+        [-f] Fuerza a reboot , no llama a shutdown.
+        [- ]Apaga todas las interfaces de red justo antes de detener o reiniciar el sistema.
+        [-h] Pone todos los discos duros en el sistema en modo de espera antes de detenerse o de apagarse.
+        [-p] Cuando apagamos el sistema, se desconecta la alimentación. Este es el valor por defecto cuando halt es llamado como poweroff.
+        reboot --> se iniciara el reiniciado automáticamente
+
+  c) halt
+    • Se utiliza para apagar el ordenador.
+    • Sintaxis: halt [-d | -f | -h | -n | -i | -p | -w]
+          [-d]	No escribir registro wtmp (en el archivo /var/log/wtmp) El flag -n implica -d
+          [-h]	Poner todos los discos duros del sistema en modo de espera antes de que el sistema se detenga o apague
+          [-n]	No sincronizar antes de reiniciar o detener
+          [-i]	Apagar todas las interfaces de red.
+          [-p]	Cuando detenga el sistema, lo apaga también. Esto es por defecto cuando el halt se llama como poweroff.
+          [-w]	No reiniciar o detener, sólo escribir el registro wtmp (en el archivo /var/log/wtmp)
+
+  d) locate
+    • La forma más práctica de buscar un archivo en Linux, este comando locate se encarga de realizar las búsquedas haciendo uso de una base de 
+      datos donde se encuentra toda la información y locate la consulta a ella directamente. Ya que la base de datos contiene todas las rutas 
+      de archivos en el sistema sin necesidad de ir de forma individual por cada partición y sistema de archivos.
+    • Es caseSensitive  
+    • Instalarlo: sudo apt install locate
+    • Actualizar la base de datos: sudo updatedb
+    • Buscar un archivo: locate nombreArchivo. Nos aparece la ruta donde se encuentra ese archivo.
+
+  e) uname
+   • Su fin es el de mostrar información del sistema operativo como: la versión del mismo, kernel y detalles del equipo entre otras posibilidades.
+   • Sintaxis: uname [parametros]
+          parametros: -s: nombre del kernel
+                      -r: version del kernel
+                      -v: version del SO
+                      -o: nombre del SO
+                      -n: nombre del host (nombre del sistema en la red)
+                      -m: tipo de arquitectura
+                      -a: toda la info de arriba junta
+
+  f) dmesg
+    • Es usado con el fin de escribir los mensajes del kernel en Linux en una salida estándar de forma mucho más organizada.
+    • Obtiene los datos leyendo el buffer del anillo del kernel. Básicamente un buffer es una parte de la memoria del equipo que se reserva 
+      como un lugar temporal para los datos que son enviados o recibidos desde un dispositivo externo, tales como una unidad de disco duro, 
+      un teclado, etc, mientras que un búfer de anillo es un búfer de tamaño fijo en el cual cualquier dato nuevo agregado va a sobrescribir 
+      los datos más antiguos allí alojados. dmesg se usa para examinar o controlar el buffer del anillo kernel y la acción predeterminada 
+      es mostrar todos los mensajes del buffer de anillo kernel.
+    • Sintaxis: dmseg [parametros]
+                parametros: -C, --clear                  Borra el «buffer» circular del núcleo.
+                            -c, --read-clear             Lee y borra todos los mensajes.
+                            -D, --console-off            Desactiva la impresión de mensajes por consola.
+                            -E, --console-on             Activa la impresión de mensajes por consola.
+                            -F, --file <fichero>         Utiliza el fichero en lugar del «buffer» de registro del núcleo.
+                            -f, --facility <lista>       Restringe la salida a los recursos definidos.
+                            -H, --human                  Salida legible para humanos.
+                            -k, --kernel                 Muestra los mensajes del núcleo.
+                            -L, --color[=<cuándo>]       Colorea los mensajes (auto, siempre o nunca).                            
+                            -l, --level <lista>          Restringe la salida a los niveles definidos.
+                            -n, --console-level <nivel>  Establece el nivel de los mensajes imprimidos por la consola.
+                            -P, --nopager                No redirige la salida a un busca.
+                            -r, --raw                    Imprime el «buffer» de mensajes en bruto.
+                            -S, --syslog                 Fuerza a utilizar syslog(2) en lugar de /dev/kmsg.
+                            -s, --buffer-size <tamaño>   Tamaño de «buffer» para consultar el «buffer» circular del núcleo.
+                            -u, --userspace              Muestra los mensajes del espacio d usuario.
+                            -w, --follow                 Espera por mensajes nuevos.
+                            -x, --decode                 Descodifica recurso y nivel en una cadena legible.
+                            -d, --show-delta             Muestra la diferencia de tiempos entre los mensajes imprimidos.
+                            -e, --reltime                Muestra la hora local y la diferencia de tiempo en formato legible.
+                            -T, --ctime                  Fechas legibles por humanos.
+                            -t, --notime                 No imprime la marca de tiempo de los mensajes.
+                                --time-format <formato>  Muestra la marca de tiempo con el formato: [delta|reltime|ctime|notime|iso].
+                            NOTA: Suspender / Reanudar volverá inexactas las marcas de tiempo de ctime e iso.
+                            -h, --help      Muestra esta ayuda y sale.
+                            -V, --version   Muestra información de versión y sale.
+                            si no pongo parametros muestra toda la informacion 
+
+  g) lspci
+    • Muestra la información acerca de las ranuras PCI en el sistema y los dispositivos conectados a éstas.
+    • De modo predeterminado muestra una breve lista de estos dispositivos.
+    • Sintaxis: lspci [opciones]
+                  opciones:
+                            -t: mostrar un diagrama que incluye a todas las ranuras PCI, puentes, dispositivos y conexiones entre éstos
+                            -v, -vv o -vvv: para ver tres diferentes niveles de detalle. La salida será muy extensa en todos los casos.
+                            -n: mostrar los código de dispositivo como números en lugar de mostrar la lista de identidades PCI
+
+  h) at
+    • Podemos leer comandos de entrada estándar o scripts que deseamos que se ejecuten más tarde, una única vez.
+    • Puede ser útil para apagar el sistema a una hora especifica, realizar una copia de seguridad única, enviar un correo electrónico 
+      como recordatorio a la hora especificada, entre otras muchas cosas.
+    • Instalarlo: sudo apt update
+                  sudo apt install at
+    • Sintaxis simplificada: at [OPTION...] runtime
+                            Una vez que presione Enter, se le presentará en el símbolo del sistema at que muy a menudo comienza con at>. 
+                            También se muestra una advertencia que indica el shell en el que se ejecutará el comando.
+                            Cuando haya terminado de ingresar los comandos, presione Ctrl-D para salir del indicador y guardar el proceso.
+                            El comando mostrará el número de trabajo y la hora y fecha de ejecución.
+                            opciones: 
+                                  -f: Para leer comandos de un archivo en lugar de la entrada estándar, siguiendo la ruta del archivo. 
+                                      Por ejemplo, para crear un trabajo que ejecutará el script /home/script.sh --> at 09:00 -f /home/script.sh
+                                  -M: De forma predeterminada, si el comando produce una salida, enviará un mail con la salida al usuario una 
+                                      vez que se complete el trabajo. Invocar at la -M opción para suprimir la notificación por mail
+                                  -m: para enviar un correo electrónico incluso si no hay salida.
+
+  i) netstat
+    • Permite supervisar las conexiones de red tanto entrantes como salientes, así como ver tablas de enrutamiento, estadísticas de la interfaz,etc
+    • Indica qué puertos están abiertos y si los programas están escuchando en los puertos permitiéndonos llevar un mejor control sobre estos.
+    • Sintaxis: netstat [opciones]
+                  opciones:
+                          -a: Listar todas la conexiones
+                          -i,-ie: Identificar las interfaces de red
+                          -at: Listar las conexiones TCP
+                          -au: Listar las conexiones UDP
+                          -tnl: Puertos abiertos que escuchan un servicio
+                          -s: Estadísticas de la red
+
+  j) mount
+    • Para tener acceso a la información de un dispositivo éste debe montarse. La operación de montado permite conectar un sistema de ficheros 
+      con un directorio (punto de montaje) del sistema Linux. El comando mount sirve para montar dispositivos.
+    • La operación de montar y desmontar solo la puede realizar el superusuario
+    • Sintaxis: mount [opciones] [-t tipo] [-a] [-o opc] dispo punto_montaje
+                  opciones: -a Permite montar todos los sistemas de ficheros especificados en el fichero /etc/fstab
+                            -f Realiza un montaje ficticio. Sirve para comprobar si el montaje se realizaría correctamente
+                            -n Monta el dispositivo sin escribirlo en el fichero /etc/mtab
+                            -r Monta el sistema de ficheros como sólo lectura
+                            -w Monta el sistema de ficheros para lectura/escritura (opción por defecto)
+  k) umount
+    • Elimina el anclaje entre el dispositivo especial y el punto de montaje.
+    • Sintaxis: umount [opciones]
+                  opciones: 
+                      –V: Permite realizar pruebas
+                      –a: Desmonta varios sistemas de archivos a la vez. Si se incluyen puntos de montaje con la opción –a, los sistemas de 
+                          archivos se desmontan. Si no hay puntos de montaje incluidos, se realiza un intento de desmontar todos los sistemas 
+                          de archivos que aparecen en /etc/mnttab, excepto los sistemas de archivos "necesarios", como /, /usr, /var, /proc, 
+                          /dev/fd y /tmp. Como el sistema de archivos ya está montado y debe tener una entrada en /etc/mnttab, no tiene que 
+                          incluir un indicador para el tipo de sistema de archivos.
+                      –f: Fuerza un sistema de archivos ocupado para que se desmonte. Puede utilizar esta opción para desbloquear un cliente 
+                          bloqueado cuando intenta montar un sistema de archivos desmontable.
+  
+  l) head
+    • Se utiliza para mostrar información, si lo usamos sin parámetros, de las 10 primeras líneas de un archivo en la salida estándar. 
+      También se puede utilizar para mostrar información de varios ficheros a la vez.
+    • Sintaxis: head [opciones]
+                     opciones: 
+                          -n* --> * numero de lineas que queremos que nos muestre     
+                          -c* --> los primeros * bytes 
+  
+  m) losetup
+    • Se utiliza para fijar el dispositivo de bucle.
+    • Un dispositivo loop es muy útil para recuperación de datos, por ejemplo, cuando un disco duro está fallando y volcamos su contenido en un
+      fichero. Podemos crear un dispositivo loop que apunte al fichero y después ejecutar herramientas de recuperación sobre los datos. 
+      Otra situación en la que también es muy útil es para acceder al contenido de los discos duros de máquinas virtuales sin tener que arrancar
+      la maquina virtual. Los discos duros raw que utiliza KVM son imágenes exactas de un disco duro y perfectos para utilizarlos con losetup.
+    • Sintaxis: losetup [-d][-e <cifrado> ][-o <número de traducción>]
+                -d: dispositivo extraíble.
+                -e <cifrado>: Iniciar cifrado codificación.
+                -o <número de traducción>: Establecer el número de conversión de datos.
+
+  n) write
+    • Sirve para enviar un mensaje a un usuario en particular. Para ello primero debemos saber cuales son los usuarios conectados,
+       utilizando el comando “who“.
+    • Sintaxis: write usuario [nombre-tty]
+                mensaje
+                          x=numero terminal
+                          La opción tty solo es necesaria cuando un usuario está activo en más de un terminal. 
+                          La conversación se finaliza pulsando Ctrl-D, enviando un EOF.
+
+  ñ) mkfs
+    • Es el proceso que prepara una partición para que pueda almacenar datos (formateo). La partición necesita una forma de almacenar archivos, sí. 
+      Pero también necesita un mecanismo para almacenar los nombres y ubicaciones de esos archivos, junto con sus metadatos, como la marca 
+      de tiempo de creación del archivo, la marca de tiempo modificada del archivo, el tamaño del archivo, etc. Una vez que mkfs ha creado el 
+      marco necesario para manejar y almacenar metadatos de archivos, puede comenzar a agregar archivos a la partición.
+    • Sintaxis: mkfs [-V] [-t fstype ] [c] nombreParticion
+            Dispositivo: examen preliminar de la partición del disco duro, por ejemplo: / dev / sda1
+            -V: Modo de presentación detallada
+            -t: para un determinado tipo de sistema de archivos, por defecto de Linux es ext2
+            -c: Al hacer el sistema de archivos, inspeccionar la partición de mala pista
+  
+  o) fdisk 
+    • Nos permite realizar diversas acciones sobre los discos duros tales como: crear y editar nuevas particiones, eliminar particiones, 
+      Modificar sistema de archivos y más.
+    • Es una de las herramientas más potentes que podemos usar para administrar particiones.
+    • Sintaxis: fdisk [opciones]
+                  opciones:
+                      -l: Para listar las particiones del disco duro actual. Podemos agregar el nombre del disco para mostrar solo las 
+                          particiones asociadas a el.
+                      fdisk + nombreDisco: ingresar al modo de comando para ese disco
+                      luego de entrar al modo comando tenemos varias opciones:
+                          d: borrar una particion
+                          m: despliega opciones del menu
+                          n: crea una nueva particion
+                          p: despliega particiones actuales
+                          q: sale de fdisk sin guardar modificaciones
+                          t: cambio tipo de particion seleccionada
+                          v: analiza tabla de particion
+                          w: guarda cambios y sale de fdisk
+
+  p) su root
+      • sirve para entrar como usuario root
+12. Indique en qué directorios se almacenan los comandos mencionados en el ejercicio anterior.
+  • Ejecutar el comando "sudo find / -name nombrecomando" hace que aparezca en consola el directorio donde esta cada comando.
+  • La mayoria esta en /bin o /sbin
